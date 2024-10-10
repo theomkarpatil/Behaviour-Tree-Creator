@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9108709267552158798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16db4b6a1557cba4a8ce9ddf72b05581, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  guid: 89d0c395c3767e54bbd052252ed0bef2
+  position: {x: -122.98867, y: 475.99338}
+  parentNode: {fileID: 0}
+  state: 0
+  hasStarted: 0
+  firstPass: 1
+  description: 
+  blackboard: {fileID: 0}
+  transform: {fileID: 0}
+  children:
+  - {fileID: -1498367285685419282}
+  - {fileID: -7575429385904457715}
+--- !u!114 &-7635315776926603358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf4a47b9145b8b4c9fe55ec5c4abac5, type: 3}
+  m_Name: EnemyPatrol
+  m_EditorClassIdentifier: 
+  guid: 152aa71d680cc4b4986eee9450c5411b
+  position: {x: 149.95447, y: 477.57977}
+  parentNode: {fileID: 0}
+  state: 0
+  hasStarted: 0
+  firstPass: 1
+  description: 
+  blackboard: {fileID: 0}
+  transform: {fileID: 0}
+  wayPoints:
+  - {x: -6, y: 1, z: -5}
+  - {x: 6, y: 1, z: -5}
+  movementSpeed: 3
+--- !u!114 &-7575429385904457715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8c7a5941224f14eb6025ec1e31d615, type: 3}
+  m_Name: MoveTowardsTarget
+  m_EditorClassIdentifier: 
+  guid: 7d62714ebf2ce2746a9cd28aec73c569
+  position: {x: 3.9204435, y: 644.1335}
+  parentNode: {fileID: 0}
+  state: 0
+  hasStarted: 0
+  firstPass: 1
+  description: 
+  blackboard: {fileID: 0}
+  transform: {fileID: 0}
+  movementSpeed: 4
+--- !u!114 &-1498367285685419282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc96a921017d9b4ca8e30bb6280ad00, type: 3}
+  m_Name: LookForTarget
+  m_EditorClassIdentifier: 
+  guid: eeee4f30ba7393f44aa9df34a56db343
+  position: {x: -247.85239, y: 641.50116}
+  parentNode: {fileID: 0}
+  state: 0
+  hasStarted: 0
+  firstPass: 1
+  description: 
+  blackboard: {fileID: 0}
+  transform: {fileID: 0}
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 65
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c3fa39601f9f8744b4ab0af3faa14f6, type: 3}
+  m_Name: EnemyBT
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 3718184022874148840}
+  treeState: 0
+  nodes:
+  - {fileID: 3718184022874148840}
+  - {fileID: 2420929518884976842}
+  - {fileID: -7635315776926603358}
+  - {fileID: -1498367285685419282}
+  - {fileID: -7575429385904457715}
+  - {fileID: -9108709267552158798}
+  - {fileID: 3637206707055910226}
+  blackboard: {fileID: 11400000, guid: 27a3dc96eb7add74ca1332784f52290f, type: 2}
+  transform: {fileID: 0}
+--- !u!114 &2420929518884976842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c22ef4575d2e1a640b7eb546728953bf, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  guid: d94423cc42de2c74bb5ee664674bb258
+  position: {x: 4.9658794, y: 164.85236}
+  parentNode: {fileID: 3718184022874148840}
+  state: 0
+  hasStarted: 0
+  firstPass: 1
+  description: 
+  blackboard: {fileID: 0}
+  transform: {fileID: 0}
+  child: {fileID: 3637206707055910226}
+--- !u!114 &3637206707055910226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0608d06a43ea9684fa6d80eff77575cd, type: 3}
+  m_Name: ParallelNode
+  m_EditorClassIdentifier: 
+  guid: 7ab144340ecb96640b64f5f9504354fb
+  position: {x: 4.922528, y: 318.6125}
+  parentNode: {fileID: 0}
+  state: 0
+  hasStarted: 0
+  firstPass: 1
+  description: 
+  blackboard: {fileID: 0}
+  transform: {fileID: 0}
+  children:
+  - {fileID: -9108709267552158798}
+  - {fileID: -7635315776926603358}
+--- !u!114 &3718184022874148840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be85542a6a252446becbe86379a5ca9, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  guid: c056587cb4d39df4c994b3897c2113fa
+  position: {x: 3.9772513, y: 26.102188}
+  parentNode: {fileID: 0}
+  state: 0
+  hasStarted: 0
+  firstPass: 1
+  description: 
+  blackboard: {fileID: 0}
+  transform: {fileID: 0}
+  child: {fileID: 2420929518884976842}

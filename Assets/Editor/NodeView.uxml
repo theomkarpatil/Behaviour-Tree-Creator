@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/NodeViewStyle.uss?fileID=7433441132597879392&amp;guid=2850f192dd0f4e642a0cb2d597544fe3&amp;type=3#NodeViewStyle" />
+    <ui:VisualElement name="node-state" style="flex-grow: 1;" />
+    <ui:VisualElement name="node-border">
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="divider" class="horizontal" />
+            <ui:VisualElement name="top">
+                <ui:VisualElement name="input" style="justify-content: center;" />
+                <ui:VisualElement name="dividerInput" class="vertical" style="position: relative;" />
+                <ui:VisualElement name="title" style="top: 5px;">
+                    <ui:Label name="title-label" text="ControlFlowSequencer" class="unity-text-element unity-label" />
+                    <ui:VisualElement name="title-button-container">
+                        <ui:VisualElement name="collapse-button">
+                            <ui:VisualElement name="icon" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="dividerText" class="vertical" style="background-color: rgba(150, 150, 150, 0.49); min-height: 1px; top: 10px;" />
+                <ui:Label tabindex="-1" text="description...&#10;&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="description" style="-unity-font-style: normal; font-size: 12px; top: 15px; white-space: normal; min-width: auto; min-height: 32px;" />
+                <ui:VisualElement name="dividerOutput" class="vertical" style="top: 5px; background-color: rgb(150, 150, 150);" />
+                <ui:VisualElement name="output" style="min-height: auto; justify-content: center; margin-top: 0; max-width: none; bottom: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+</ui:UXML>
