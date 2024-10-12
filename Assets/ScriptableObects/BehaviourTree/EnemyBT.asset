@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: MoveTowardsTarget
   m_EditorClassIdentifier: 
   guid: 7d62714ebf2ce2746a9cd28aec73c569
-  position: {x: 3.9204435, y: 644.1335}
+  position: {x: -1.4174507, y: 668.02185}
   parentNode: {fileID: 0}
   state: 0
   hasStarted: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: LookForTarget
   m_EditorClassIdentifier: 
   guid: eeee4f30ba7393f44aa9df34a56db343
-  position: {x: -247.85239, y: 641.50116}
+  position: {x: -255.91649, y: 667.3678}
   parentNode: {fileID: 0}
   state: 0
   hasStarted: 0

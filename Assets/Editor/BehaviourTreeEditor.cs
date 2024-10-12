@@ -93,6 +93,7 @@ namespace Sora.AI.Editor
             if(!tree && Selection.activeGameObject != null)
             {
                 BehaviourTreeRunner btRunner = Selection.activeGameObject.GetComponent<BehaviourTreeRunner>();
+                treeView.behaviourTree = tree;
 
                 if (btRunner)
                     tree = btRunner.tree;

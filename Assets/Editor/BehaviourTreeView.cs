@@ -22,7 +22,7 @@ namespace Sora.AI.Editor
     public class BehaviourTreeView : GraphView
     {   
         public new class UxmlFactory : UxmlFactory<BehaviourTreeView, UxmlTraits> { }
-        private BehaviourTree behaviourTree;
+        public BehaviourTree behaviourTree;
 
         public Action<NodeView> onNodeSelected;
 

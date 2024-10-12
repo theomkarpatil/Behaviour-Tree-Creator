@@ -12,7 +12,6 @@ using UnityEngine;
 namespace Sora.AI.BehaviourTrees
 {
     [CreateAssetMenu(fileName = "EnemyBlackBoard", menuName = "Sora /BehaviourTree/EnemyBlackBoard")]
-
     public class BlackBoardEnemy : Blackboard
     {
         public Transform target;

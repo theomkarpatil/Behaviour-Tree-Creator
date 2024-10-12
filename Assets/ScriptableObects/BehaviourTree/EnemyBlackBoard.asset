@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339a274ed5952804eb654d741aae8a39, type: 3}
   m_Name: EnemyBlackBoard
   m_EditorClassIdentifier: 
-  tree: {fileID: 0}
+  tree: {fileID: 11400000, guid: b904d362e4912984ab8ece41e4f540e3, type: 2}
   target: {fileID: 0}
+  targetInSight: 0
+  movingTowardsTarget: 0
