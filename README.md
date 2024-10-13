@@ -1,4 +1,6 @@
-# GraphBasedBehaviourTree
+A Graphview based custom Behaviour Tree Creator for Unity
+
+# Graph Based Behaviour Tree Creator
 The Goal of this Behaviour Tree Editor is to allow Designers to create NPC behaviours using simple to understand Trees.
 Programmers may add custom Nodes based on their Requirement that will reflect onto the Tree Editor.
 
